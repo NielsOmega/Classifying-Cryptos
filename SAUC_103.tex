@@ -1,0 +1,122 @@
+\documentclass[a4paper,12pt]{elsarticle} %,a4paper %[oneside,12pt,notitlepage]
+\usepackage{geometry} %[papersize={8.5in,11in}]%[top=2.41cm, bottom=3cm, left=2.41cm, right=2.41cm]
+%\geometry{margin=1.5in}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{textcomp}
+\usepackage{rotating}
+\usepackage{xtab}
+\usepackage{graphicx}
+\usepackage{subcaption}
+%\usepackage[authoryear]{natbib}
+\bibliographystyle{abbrvnat} % (For authoryear Elsevier citations)
+\setcitestyle{authoryear,open={(},close={)}}
+\usepackage{titlesec}
+\usepackage{url}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[utf8]{inputenc}
+\usepackage{subcaption}
+%\usepackage{pdflscape} % put Table on a4
+\usepackage{epstopdf} % Use eps now![outdir=./]
+\usepackage{siunitx} % Avoid dancing decimals
+\sisetup{separate-uncertainty=true} % Make plusminus signs work in Table/tabular
+\usepackage{hyperref} % Put toc in the compiled pdf-file
+\hypersetup{colorlinks=true,allcolors=blue}
+\usepackage{hypcap}
+\usepackage{tabularx,ragged2e} % automatic line break in tables
+\usepackage{float}% If comment this, figure moves to Page 2
+%\usepackage[sectionbib]{chapterbib} %create bib for each chapter
+%\usepackage{floatrow}
+%\usepackage{blindtext}
+%\usepackage{titlesec} % Chapter in one line
+%\titleformat{\chapter}[hang]{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter:}{1em}{}
+
+%% Format settings
+\captionsetup[table]{justification=justified,labelsep=none}
+\linespread{1.48}
+\setlength{\tabcolsep}{3pt}
+%\parindent0pt  % set indent to zero, avoid \noindent
+%\raggedbottom
+
+
+% New arguments
+\newcommand{\blind}{0} % blinded version, replace "0" with "1" below.
+
+% New commands
+%\newfloatcommand{capbtabbox}{table}[][\FBwidth]
+\newcommand{\citeapos}[1]{\citeauthor{#1}'s (\citeyear{#1})}
+\newcommand{\hypref}[1]{\mbox{(\ref{#1})}}
+\renewcommand{\theenumi}{\roman{enumi}}
+\newcommand{\E}{\mathop{\mbox{\sf E}}}
+\newcommand{\F}[1]{{\mathbb F}}
+\newcommand{\IF}{\boldsymbol{1}}
+\newcommand{\quantnet}{\hspace*{\fill} \raisebox{-1pt}{\includegraphics[scale=0.05]{Fig/qletlogo}}\,} % Quantnet icon (right-aligned)
+
+\DeclareMathOperator{\sign}{\text{sign}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+% mychapter command
+\newcommand{\mychapter}[2]{
+	\setcounter{chapter}{#1}
+	\setcounter{section}{0}
+	\chapter*{#2}
+	\addcontentsline{toc}{chapter}{#2}
+}
+\begin{document}
+
+\begin{frontmatter}
+
+\if0\blind{
+
+\title{Phenotypic convergence of cryptocurrencies} % On the speciation of Cryptocurrencies
+%\fnref{fn1}
+%\fntext[fn1]{Financial support from the Deutsche Forschungsgemeinschaft via International Research Training Group 1792 ''High Dimensional Nonstationary Time Series'', Humboldt-Universität zu Berlin, is gratefully acknowledged.}
+
+%\subtitle{}
+\author[1]{Daniel Traian Pele}
+\author[2]{Niels Wesselhöfft}
+\author[3]{Wolfgang K.\ Härdle}
+\address[1]{Department of Statistics and Econometrics, Faculty of Cybernetics, Statistics and Economic Informatics, The Bucharest University of Economic Studies, 010371 Bucharest, Romania, E-mail: danpele@ase.ro}
+\address[2]{Humboldt-Universität zu Berlin, IRTG 1792, Spandauer Str. 1, 10178 Berlin, Germany, E-mail: wesselhn@hu-berlin.de}
+\address[3]{Humboldt-Universität zu Berlin, IRTG 1792, Spandauer Str. 1, 10178 Berlin, Germany and School of Business, Singapore Management University, 50 Stamford Road, Singapore 178899}
+
+}\fi
+
+\if1\blind
+{
+\title{Phenotypic convergence of cryptocurrencies}
+ %\mbox{}
+}\fi
+
+%\date{\svnday.\svnmonth.\svnyear, SVN-revision: \svnrev}
+\date{\;}
+
+%\maketitle
+
+\begin{abstract}
+\footnotesize{
+\noindent In this paper we show that the financial asset class of cryptocurrencies converges to a unique asset class in comparison to stocks, commodities and exchange rates. In biological terms, individual cryptocurrencies respond to similar selection pressures by developing similar characteristics, leading to a phenotypic convergence of cryptocurrencies. In order to retrieve the phenotype of cryptocurrencies, we find the proximal genus and the specific difference (\textit{genus proximum et differentia specifica}) for the daily time series of cryptocurrencies returns, comparing them to classical asset returns. In this sense, the daily time series of asset returns can be characterized by a multidimensional vector with statistical components like volatility, skewness, kurtosis, tail probability, quantiles, conditional tail expectation or fractal dimension. By using dimension reduction techniques (Factor Analysis) and classification models (Binary Logistic Regression, Quadratic Discriminant Analysis, Support Vector Machines) we are able to classify cryptocurrencies as a new asset class with unique features in the tails of the returns distribution. By using expanding window estimation for the factors, we observe a divergent evolution of the cryptocurrencies class, mainly due to the heavy tail behaviour of the respective return distributions. The codes utilized are available via \url{www.quantlet.de.} \\
+
+
+\noindent{\em Keywords}: cryptocurrency, classification, multivariate analysis, factor models, phenotypic convergence, divergent evolution  \newline %genus proximum, differentia specifica,
+\noindent{\em JEL Classification}: C14, C22, C46, C53, G32}
+\end{abstract}
+
+\end{frontmatter}
+
+
+\input{0_Introduction/Intro} %include has clearpage, input not
+\input{1_Methodology/Meth}
+\input{2_DataResults/Data}
+\input{3_Evolutive_Divergence/Div}
+\input{X_Conclusion/Conc}
+
+%%%%%%%
+
+\bibliography{references}
+\bibliographystyle{elsarticle-harv}%{unsrtnat}
+
+\end{document} 

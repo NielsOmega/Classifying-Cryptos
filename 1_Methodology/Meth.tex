@@ -1,0 +1,113 @@
+\section{Methodology}
+
+The methodology used in this paper has four layers: first, we study the statistical properties of the daily log-returns of the selected assets and we estimate the components of a multidimensional vector describing the behaviour of the time series of assets’ daily log-returns. Second, we apply data dimension reduction and orthogonalization methods (Factor Analysis – FA,) in order to retain the orthogonal factors which maximizes the explained variance. Third, we employ classification techniques (Binary logistic regression, Discriminant analysis, Support Vector Machine – SVM) to obtain the most influential factors discriminating between the cryptocurrencies and the classical assets. Fourth, we prove the validity of the phenotypic convergence, showing that cryptocurrencies poses specific characteristics allowing them to differentiate over time from the classical assets.
+\subsection{Taxonomy variables}
+
+According to Aristotle, the definition of a species consists of genus proximum and differentia specifica \citep{Parry.1991}. In order to properly define cryptocurrencies in terms of their genus proximum and differentia specifica, we need an initial dataset of variables that have the statistical power to differentiate between the cryptocurrencies and the classical assets (stocks, exchange rates and commodities).\\
+Before introducing the multidimensional dataset used for taxonomy, we define the following notations:
+\begin{itemize}
+	\item $n$ – the number of assets in the dataset;
+	\item $t$ – the time index, $t \in\{1, \ldots, T\}$, where $T$ is the time of the last record in the dataset;
+	\item  $P_{i, t}-$ the closing price for asset $i$ in day $t,$ with $i=1\ldots n$,  $t=1 \ldots T$;
+	 \item $R_{i, t}=\log P_{i, t}-\log P_{i, t-1}$ - the daily log-return for asset  $i$ in day $t,$ with $i=1\ldots n$,  $t=1 \ldots T$;
+	 \item	$R=\left(R_{i, t}\right)_{i=1 \ldots, T}^{\mathrm{T}} \in M(T, n)$ - the initial matrix of the assets’ daily log-returns;
+	 \item	$p$ - the number of variables used for taxonomy.
+\end{itemize}
+
+The multidimensional dataset used for taxonomy is the matrix $X_{t}=\left(x_{i t_{t}, k}\right)_{i=1 \ldots n \atop k=1 \ldots p} \in M(n, p)$ , whose components are detailed below, estimated for the time interval [1, $t$], with $t=t_{0} \ldots T$, where $t_{0}=[T / 3]$.\\
+First, we took into account the moments of the log-returns distribution, through the following parameters:
+
+\begin{itemize}
+\item variance: $\sigma_{i t}^{2}=E\left\{{(R_{i}-\mu_{i,t})}^2\right\}$ ;
+ \item skewness:  $Skewness_{i t}=E\left\{{(R_{i}-\mu_{i,t})}^3\right\}/{\sigma}_{i t}^{3}$;
+ \item kurtosis: $Kurtosis_{i t} =E\left\{{(R_{i}-\mu_{i,t})}^4\right\}/{\sigma}_{i t}^{4}$.
+\end{itemize}
+
+Second, we estimated the following parameters of the $\alpha$-stable distribution, in order to capture some scaling properties:
+\begin{itemize}
+	\item the tail parameter: \textit{Stable\_${\alpha}_{i t}$};
+	\item the scale parameter: \textit{Stable\_${\gamma}_{i t}$}.
+\end{itemize}
+
+The $\alpha$-stable parameters were estimated using the empirical characteristic function method, following \cite{Koutrouvelis.1980} and \cite{Koutrouvelis.1981}. For computational efficiency, we used the fast parallel $\alpha$-stable distribution function evaluation and parameter estimation, through the Matlab library \textit{libstable} \citep{JulianMoreno.2017}.\\
+Third, we estimated the quantiles and the conditional tail expectations for the distribution of log-returns, in order to capture the tail behaviour:
+\begin{itemize}
+	\item quantiles: ${Q}_{\alpha ; i t},$ with $\alpha \in\{0.005,0.01,0.025,0.05,0.95,0.975,0.99,0.995\}$;
+	\item conditional left tail expectation: $C T E_{\alpha, i t}\left(R_{i t}\right)=E\left[R_{i t} | R_{i t}<Q_{\alpha ; i t}\right]$, for $\alpha \in\{0.005,0.01,0.025,0.05\}$;
+	\item conditional right tail expectation: $C T E_{\alpha, i t}\left(R_{i t}\right)=E\left[R_{i t} | R_{i t}>Q_{\alpha ; i t}\right]$, for $\alpha \in\{0.95,0.975,0.99,0.995\}$.
+\end{itemize}
+From a market risk perspective, the left tail quantiles can be assimilated to Value-at-Risk, the conditional left tail expectation can be regarded as Expected Shortfall, while the conditional right tail expectation can be seen as the Expected Upside.
+Fourth, we estimated the following parameters, in order to capture the memory properties:
+\begin{itemize}
+
+	\item first order autocorrelation of the time series of daily log-returns: ${\rho}_{i t}(1)$ ;
+	\item Hurst exponent: ${H}_{i t}$. The Hurst exponent \citep{Hurst.1951} of the time series of daily log-returns was estimated based on the discrete second-order derivative in the wavelet domain \citep{ISTAS.1997}.
+\end{itemize}
+Our multidimensional dataset can be seen as a tensor $\mathscr{X} \in \mathrm{R}^{n\times p\times T'}$, where $n$ is the number of assets, $p=23$ is the number of variables and $T'=T-t_0$ is the number of time points.
+
+
+
+\subsection{Factor Analysis}
+
+The most popular methods used to synthesize and extract relevant information from large datasets are Principal Components Analysis (PCA) and Factor Analysis (FA)\citep{Bartholomew.2011}. In this paper, we are using Factor Analysis to extract the main factors explaining the variation in the initial dataset, the reason for this being the fact that PCA is a linear combination of variables, while Factor Analysis is a measurement model of a latent variable. The aim of the factor analysis (FA) is to explain the outcome of the $p$ variables in the data matrix $X$ using fewer variables, the so-called factors \citep{Hardle.2012}. The orthogonal factor model is given by:
+\begin{align}
+X&=QF+U+\mu\\
+(p\times 1)&=(p\times k) (k\times 1) + (p\times 1)+(p\times 1),
+\end{align}
+
+with the following notations:
+\begin{itemize}
+  \item $X$ is the initial matrix of $p$ variables.
+  \item $F$ are the common $k$ factors $(k<<p)$.
+  \item $Q$ is a matrix of the non-random loadings of the common factors $F$.
+  \item $U$ is a matrix of the random specific factors.
+  \item $\mu$ is the vector of the means of initial $p$ variables.
+  \item the random vectors $F$ and $U$ are unobservable and uncorrelated.
+\end{itemize}
+
+In our paper, the initial factor pattern is extracted using the principal component method, followed by a VARIMAX rotation to insure orthogonality of the factors. The Factor Analysis was applied on the entire dataset $X_T$, the $p$ initial variables being estimated for the entire time period $[1,\ldots, T]$. The $p$-dimensional dataset $X_T$ was then projected on the $k$-dimensional space defined by the $k$ orthogonal factors, in order to observe a separation of the assets.
+
+
+
+\subsection{Assets Classification}
+In order to find \textit{genus proximum and differentia specifica} of the cryptocurrencies, we are using several classification techniques, detailed below.
+\subsubsection{Binary Logistic Regression}
+ The Binary logistic regression model quantifies the performance of each of the orthogonal factors extracted through the Factor Analysis to discriminate between the cryptocurrencies and classical assets. Thus, we are estimating the following family of models:
+\begin{align} \label{form:logit}
+P(Y_{i}=1)=\frac{\exp(\beta_{0 j}+\beta_{1 j} F_{j i})}{1+\exp(\beta_{0 k}+\beta_{1 j} F_{j i})},
+\end{align}
+
+where $Y_{i}=1$ for cryptocurrencies, $Y_{i}=0$ for classical assets, and $F_j, j\in\left\{1,\ldots,k\right\}$ are the $k$ orthogonal factors retrieved through the factor analysis. Based on the explanatory power and the significance of the model \ref{form:logit}, we can derive the most important factors contributing to the \textit{differentia specifica} of cryptocurrencies.
+As a performance measure for the model \ref{form:logit}, we are using $\tilde{R^2}$ \citep{NAGELKERKE.1991}, where:
+\begin{align} \label{form:pseudoR}
+\tilde{R}^{2}=\frac{1-\left\{\frac{L(\mathbf{0})}{L(\widehat{\boldsymbol{\beta}})}\right\}^{\frac{2}{n}}}{1-\{L(\mathbf{0})\}^{\frac{2}{n}}}.
+\end{align}
+In formula \ref{form:pseudoR},  $L(0)$ is the likelihood of the intercept-only model, while  $L(\widehat{\boldsymbol{\beta}})$ is the likelihood of the full model.
+
+
+
+\subsubsection{Discriminant Analysis}
+The aim of discriminant analysis is to classify one or more observations into \textit{a priori} known groups, minimising the error of misclassification \citep{Hardle.2012}.
+Formally, Linear Discriminant Analysis (LDA) assumes that the input dataset is multivariate Normal: $X_i\sim N(\mu_i,\Sigma_i)$, where $X_i$ belong to class $\omega_i,\ \Sigma_i=\Sigma_j$. The goal is to project samples $X$ onto a line $Z = w^\top X$, where we select the projection that maximizes the separability. Specifically, we maximize the normalized, squared distance in the means of the classes
+  \begin{align}
+  w^\ast=\underset{w}{\arg\max}\ \frac{\vert w^\top(\mu_i-\mu_j)\vert^2}{s_i^2+s_j^2},\\
+  s_i^2=\sum_{x_i\in\omega_i}(w^\top x_i-w^\top \mu_i)^2=w^\top S_i w,
+  \end{align}
+  
+giving the Linear Discriminant of Fisher \citep{FISHER.1936}:
+  \begin{align}
+  w^\ast=S_W^{-1}(\mu_i-\mu_j),\ S_W=S_i+S_j.
+  \end{align}
+Quadratic Discriminant Analysis (QDA) follows the same procedure, but for $X_i\sim N(\mu_i,\Sigma_i)$ belong to the class $\omega_i$, one can relax the condition of equality of covariance matrices by $\Sigma_i\neq\Sigma_j$, allowing for a non-linear classifier.
+
+\subsubsection{Support Vector Machines}
+
+Support Vector Machines (SVM) are a data classification technique, aiming to produce a model which predicts target values based on a set of attributes \citep{Cristianini.2000}. The goal is to find a projection that maximizes margin in a hyperplane of the original data, without any parametric assumptions on the underlying stochastic process. The support vectors are determined via a quadratic optimization problem i.e. given a training data set $D$ with $n$ samples and $2$ dimensions $D=\left(X_{1}, Y_{1}\right), \ldots \left(X_{n}, Y_{n}\right)$, $X_{i} \in \mathbb{R}^{2}, \quad Y_{i} \in[0,1]$, the aim is to  a hyperplane that maximizes the margin
+\begin{align}
+\min _{w, b} \frac{1}{2}\|w\|^{2},
+\text{ s.t.} \quad Y_{i}\left(w^{\top} X_{i}+b\right) \geq 1, i=1, \ldots, n.
+\end{align}
+
+\subsubsection{Expanding window modelling}
+For observing the assets dynamic, we are using an expanding window approach, allowing to distinguish the evolution of the clusters.
+In fact, for $t=t_0,\ldots,T$, where $t_0=[T/3]$, the $p$-dimensional dataset $X_t$ is projected on the $k$-dimensional space defined by the main factors extracted trough the Factor Analysis applied on the dataset $X_T$. By using this projection instead of a time-varying factor model, we are avoiding situations like changes in factors loadings, causing inconsistencies over time. 

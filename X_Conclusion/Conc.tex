@@ -1,0 +1,100 @@
+\section{Conclusions}
+
+In this paper we applied linear Factor models on statistics of log returns in order to discriminate between the cryptocurrencies and traditional assets: stocks, exchange rates and commodities. Utilizing a multidimensional approach, which takes various indicators  into account, which describe the market risk behaviour, tail behaviour and long-memory characteristics of the time series of daily log-returns, we found the proximal genus and the specific difference (genus proximum et differentia specifica) between the daily time series of cryptocurrencies returns and the classical assets returns.\\
+
+Through the means of dimensionality reduction techniques and classification techniques, we showed that large parts of the variation among the cryptocurrencies, stocks, exchanges rates and commodities can be explained by three factors: the tail factor, the moment factor and the memory factor. Our analysis revealed that the main difference between cryptocurrencies and classical assets, in terms of properties of the distribution of daily log-returns, is the tail behaviour, both in the left and in the right tail of the distribution. The moment factor and the memory factor are of subliminal importance for discriminating between cryptocurrencies and classical assets.
+
+Based on the tail factor profile, we can conclude that a random asset is likely to be a cryptocurrency if it has the following properties: very long tails of the log-returns distribution (in terms of the left and right quantile and the conditional tail expectation), high variance, high value of the $\alpha$-stable scale parameter and value of the $\alpha$-stable tail index closer to 1.
+
+From the point of view of the risk analysts and regulators, the non-linear classification techniques applied on the factors extracted provide proficient results in order to discriminate between the cryptocurrencies and the other assets.
+
+The added value of our research is the study of the cryptocurrencies universe using the concepts of phenotypic convergence and divergent evolution. Through the means of an expanding window approach, we are able to depict the evolutionary dynamics of cryptocurrencies universe and show how the clusters formed by projecting the multidimensional dataset on the main factors converge over time.
+
+Viewing the assets universe as a complex ecosystem, we are able to conclude that the cryptocurrencies exhibit both a phenotypic convergence (individual cryptocurrencies develop similar characteristics over time) and a divergent evolution, as different species, compared to the classical assets.
+
+\section*{Acknowledgements}
+We would like to thank the editor and the anonymous referees for their valuable comments to this article. Financial support from the Deutsche Forschungsgemeinschaft, Germany via IRTG 1792 ‘‘High Dimensional Non Stationary Time Series’’, Humboldt-Universität zu Berlin, Germany is gratefully acknowledged.
+
+
+\newcommand{\sectionbreak}{\clearpage}
+\appendix
+\section*{Appendix A - List of assets used in the analysis}\label{appendix:a}
+
+\begin{table}[H]
+	\begin{minipage}[b]{0.48\textwidth}
+		\centering
+		\tiny{	\caption*{Table A.1: List of commodities}
+			\begin{tabular}{llll} \hline\hline
+				Nr.crt. & Commodity & Symbol   \\ \hline
+				1 & WTI Crude oil & USCRWTIC Index   \\
+				2 & Natural Gas & NGUSHHUB Index   \\
+				3 & Brent oil & EUCRBRDT Index  \\
+				4 & Unleaded Gasoline & RBOB87PM Index   \\
+				5 & ULS Diesel & DIEINULP Index  \\
+				6 & Live cattle & SPGSLC Index   \\
+				7 & Lean hogs & HOGSNATL Index   \\
+				8 & Wheat & WEATTKHR Index   \\
+				9 & Corn & CRNUSPOT Index   \\
+				10 & Soybeans & SOYBCH1Y Index   \\
+				11 & Aluminum & LMAHDY Comdty   \\
+				12 & Copper & LMCADY Comdty   \\
+				13 & Zinc & ZSDY Comdty   \\
+				14 & Nickel & CKEL Comdty   \\
+				15 & Tin & JMC1DLTS Index   \\
+				16 & Gold & XAU Curncy   \\
+				17 & Silver & XAG Curncy   \\
+				18 & Platinum & XPT Curncy   \\
+				19 & Cotton & COTNMAVG Index   \\
+				20 & Cocoa & MLCXCCSP Index \\ \hline\hline
+		\end{tabular}}
+	
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.48\textwidth}
+		\tiny{	\caption*{Table A.2: List of exchange rates}
+			\begin{tabular}{llll} \hline \hline
+				Nr. crt. & Symbol & Denomination & Name \\ \hline
+				1 & EUR & EUR/USD & Euro \\
+				2 & JPY & JPY/USD & Japanese Yen \\
+				3 & GBP & GBP/USD & Great Britain Pound \\
+				4 & CAD & CAD/USD & Canada Dollar \\
+				5 & AUD & AUD/USD & Australia Dollar \\
+				6 & NZD & NZD/USD & New Zealand Dollar \\
+				7 & CHF & CHF/USD & Swiss Franc \\
+				8 & DKK & DKK/USD & Danish Krone \\
+				9 & NOK & NOK/USD & Norwegian Krone \\
+				10 & SEK & SEK/USD & Swedish Krone \\
+				11 & CNY & CNY/USD & Chinese Yuan Renminbi \\
+				12 & HKD & HKD/USD & Hong Kong Dollar \\
+				13 & INR & INR/USD & Indian Rupee \\ \hline \hline
+		\end{tabular}}
+	
+	\end{minipage}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\tiny{	\caption*{Table A.3: CRIX components at 10/19/2018}
+		\begin{tabular}{llll} \hline\hline
+			Coin & Symbol & Name & Market Cap (in \$K) \\ \hline
+			1 & BTC & Bitcoin & 114,953,322 \\
+			2 & ETH & Ethereum & 21,665,771 \\
+			3 & XRP & Ripple & 19,035,356 \\
+			4 & BCH & Bitcoin Cash & 7,975,384 \\
+			5 & EOS & EOS & 5,005,087 \\
+			6 & XLM & Stellar & 4,633,717 \\
+			7 & LTC & Litecoin & 3,218,216 \\
+			8 & USDT & Tether & 2,755,619 \\
+			9 & ADA & Cardano & 2,450,912 \\
+			10 & XMR & Monero & 1,788,084 \\
+			11 & TRX & TRON & 1,624,929 \\
+			12 & BNB & Binance Coin & 1,461,507 \\
+			13 & MIOTA & Iota & 1,448,470 \\
+			14 & DASH & Dash & 1,368,564 \\
+			15 & NEO & Neo & 1,108,333 \\ \hline\hline
+	\end{tabular}}
+
+\end{table}
+
+
+The components of the S\&P500 used in the analysis and the entire list of assets can be found \href{https://github.com/QuantLet/Genus_proximum_cryptos/blob/master/list.xlsx}{here}. 

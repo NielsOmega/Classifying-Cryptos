@@ -1,0 +1,18 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: SAUC_103.aux
+The style file: abbrvnat.bst
+Illegal, another \bibstyle command---line 161 of file SAUC_103.aux
+ : \bibstyle
+ :          {elsarticle-harv}
+I'm skipping whatever remains of this command
+Database file #1: references.bib
+I was expecting a `,' or a `}'---line 1792 of file references.bib
+ : 
+ : @article{ziemba1986,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1802 of file references.bib
+ : 
+ : @book{zolotarev1986,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+(There were 3 error messages)

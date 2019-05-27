@@ -1,0 +1,323 @@
+\begin{thebibliography}{40}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bariviera et~al.(2017)Bariviera, Basgall, Hasperu{\'e}, and
+  Naiouf]{AurelioF.Bariviera.2017}
+A.~F. Bariviera, M.~J. Basgall, W.~Hasperu{\'e}, and M.~Naiouf.
+\newblock Some stylized facts of the bitcoin market.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications},
+  484:\penalty0 82--90, 2017.
+\newblock ISSN 0378-4371.
+\newblock \doi{10.1016/j.physa.2017.04.159}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0378437117304697}.
+
+\bibitem[Bartholomew(2011)]{Bartholomew.2011}
+D.~J. Bartholomew.
+\newblock \emph{Analysis of multivariate social science data}.
+\newblock Chapman {\&} Hall/CRC Statistics in the Social and Behavioral
+  Sciences. {CRC Press}, Boca Raton, Florida, 2nd ed. edition, 2011.
+\newblock ISBN 1584889616.
+
+\bibitem[Baur et~al.(2018)Baur, Dimpfl, and Kuck]{Baur.2018}
+D.~G. Baur, T.~Dimpfl, and K.~Kuck.
+\newblock Bitcoin, gold and the us dollar -- a replication and extension.
+\newblock \emph{Finance Research Letters}, 25:\penalty0 103--110, 2018.
+\newblock ISSN 1544-6123.
+\newblock \doi{10.1016/j.frl.2017.10.012}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S1544612317305093}.
+
+\bibitem[Bergstrom and Dugatkin(2016)]{Bergstrom.2016}
+C.~T. Bergstrom and L.~A. Dugatkin.
+\newblock \emph{Evolution}.
+\newblock {W.W. Norton {\&} Company}, New York, second edition edition, 2016.
+\newblock ISBN 0393601048.
+
+\bibitem[Borri(2019)]{Borri.2019}
+N.~Borri.
+\newblock Conditional tail-risk in cryptocurrency markets.
+\newblock \emph{Journal of Empirical Finance}, 50:\penalty0 1--19, 2019.
+\newblock ISSN 09275398.
+\newblock \doi{10.1016/j.jempfin.2018.11.002}.
+
+\bibitem[Caporale et~al.(2018)Caporale, Gil-Alana, and
+  Plastun]{GuglielmoMariaCaporale.2018}
+G.~M. Caporale, L.~Gil-Alana, and A.~Plastun.
+\newblock Persistence in the cryptocurrency market.
+\newblock \emph{Research in International Business and Finance}, 46:\penalty0
+  141--148, 2018.
+\newblock ISSN 0275-5319.
+\newblock \doi{10.1016/j.ribaf.2018.01.002}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0275531917309200}.
+
+\bibitem[Cerny and Kaiser(1977)]{Cerny.1977}
+B.~A. Cerny and H.~F. Kaiser.
+\newblock A study of a measure of sampling adequacy for factor-analytic
+  correlation matrices.
+\newblock \emph{Multivariate behavioral research}, 12\penalty0 (1):\penalty0
+  43--47, 1977.
+\newblock ISSN 0027-3171.
+\newblock \doi{10.1207/s15327906mbr1201{\textunderscore }3}.
+
+\bibitem[Corbet et~al.(2018)Corbet, Lucey, Urquhart, and Yarovaya]{Corbet.2018}
+S.~Corbet, B.~M. Lucey, A.~Urquhart, and L.~Yarovaya.
+\newblock Cryptocurrencies as a financial asset: A systematic analysis.
+\newblock \emph{SSRN Electronic Journal}, 2018.
+\newblock \doi{10.2139/ssrn.3143122}.
+
+\bibitem[Cristianini and Shawe-Taylor(2000)]{Cristianini.2000}
+N.~Cristianini and J.~Shawe-Taylor.
+\newblock \emph{An Introduction to Support Vector Machines and Other
+  Kernel-based Learning Methods}.
+\newblock {Cambridge University Press}, Cambridge, 2000.
+\newblock ISBN 9780511801389.
+\newblock \doi{10.1017/CBO9780511801389}.
+
+\bibitem[Dyhrberg(2016{\natexlab{a}})]{AnneHauboDyhrberg.2016}
+A.~H. Dyhrberg.
+\newblock Bitcoin, gold and the dollar -- a garch volatility analysis.
+\newblock \emph{Finance Research Letters}, 16:\penalty0 85--92,
+  2016{\natexlab{a}}.
+\newblock ISSN 1544-6123.
+\newblock \doi{10.1016/j.frl.2015.10.008}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S1544612315001038}.
+
+\bibitem[Dyhrberg(2016{\natexlab{b}})]{Dyhrberg.2016}
+A.~H. Dyhrberg.
+\newblock Hedging capabilities of bitcoin. is it the virtual gold?
+\newblock \emph{Finance Research Letters}, 16:\penalty0 139--144,
+  2016{\natexlab{b}}.
+\newblock ISSN 1544-6123.
+\newblock \doi{10.1016/j.frl.2015.10.025}.
+
+\bibitem[ElBahrawy et~al.(2017)ElBahrawy, Alessandretti, Kandler,
+  Pastor-Satorras, and Baronchelli]{ElBahrawy.2017}
+A.~ElBahrawy, L.~Alessandretti, A.~Kandler, R.~Pastor-Satorras, and
+  A.~Baronchelli.
+\newblock Evolutionary dynamics of the cryptocurrency market.
+\newblock \emph{Royal Society open science}, 4\penalty0 (11):\penalty0 170623,
+  2017.
+\newblock ISSN 2054-5703.
+\newblock \doi{10.1098/rsos.170623}.
+
+\bibitem[Feng et~al.(2018)Feng, Wang, and Zhang]{Feng.2018}
+W.~Feng, Y.~Wang, and Z.~Zhang.
+\newblock Can cryptocurrencies be a safe haven: a tail risk perspective
+  analysis.
+\newblock \emph{Applied Economics}, 50\penalty0 (44):\penalty0 4745--4762,
+  2018.
+\newblock ISSN 0003-6846.
+\newblock \doi{10.1080/00036846.2018.1466993}.
+
+\bibitem[Fisher(1936)]{FISHER.1936}
+R.~A. Fisher.
+\newblock The use of multiple measurements in taxonomic problems.
+\newblock \emph{Annals of Eugenics}, 7\penalty0 (2):\penalty0 179--188, 1936.
+\newblock ISSN 20501420.
+\newblock \doi{10.1111/j.1469-1809.1936.tb02137.x}.
+
+\bibitem[H{\"a}rdle and Simar(2012)]{Hardle.2012}
+W.~H{\"a}rdle and L.~Simar.
+\newblock \emph{Applied multivariate statistical analysis: [R {\&} Matlab
+  codes]}.
+\newblock Springer, Berlin and Heidelberg, 3. ed. edition, 2012.
+\newblock ISBN 3642172296.
+
+\bibitem[H{\"a}rdle et~al.(2018)H{\"a}rdle, Harvey, and Reule]{Hardle.2018}
+W.~K. H{\"a}rdle, C.~Harvey, and R.~Reule.
+\newblock Understanding cryptocurrencies.
+\newblock \emph{IRTG 1792 Discussion Paper}, 2018-044, 2018.
+\newblock URL
+  \url{https://www.wiwi.hu-berlin.de/de/forschung/irtg/results/discussion-papers/discussion-papers-2017-1/irtg1792dp2018-044.pdf}.
+
+\bibitem[Henriques and Sadorsky(2018)]{Henriques.2018}
+I.~Henriques and P.~Sadorsky.
+\newblock Can bitcoin replace gold in an investment portfolio?
+\newblock \emph{Journal of Risk and Financial Management}, 11\penalty0
+  (3):\penalty0 48, 2018.
+\newblock \doi{10.3390/jrfm11030048}.
+
+\bibitem[Hosmer and Lemeshow(2010)]{hosmer.2010}
+D.~W. Hosmer and S.~Lemeshow.
+\newblock \emph{Applied logistic regression}.
+\newblock A Wiley-Interscience publication. {John Wiley}, New York, 2nd ed.,
+  [repr.] edition, 2010.
+\newblock ISBN 0471356328.
+
+\bibitem[Hurst(1951)]{Hurst.1951}
+H.~E. Hurst.
+\newblock Long-term storage capacity of reservoirs.
+\newblock \emph{Trans. Amer. Soc. Civil Eng.}, 116:\penalty0 770--808, 1951.
+
+\bibitem[Istas and Lang(1997)]{ISTAS.1997}
+J.~Istas and G.~Lang.
+\newblock Quadratic variations and estimation of the local h{\"o}lder index of
+  a gaussian process.
+\newblock \emph{Annales de l'Institut Henri Poincare (B) Probability and
+  Statistics}, 33\penalty0 (4):\penalty0 407--436, 1997.
+\newblock ISSN 02460203.
+\newblock \doi{10.1016/S0246-0203(97)80099-4}.
+
+\bibitem[Jiang et~al.(2018)Jiang, Nie, and Ruan]{Jiang.2018}
+Y.~Jiang, H.~Nie, and W.~Ruan.
+\newblock Time-varying long-term memory in bitcoin market.
+\newblock \emph{Finance Research Letters}, 25:\penalty0 280--284, 2018.
+\newblock ISSN 1544-6123.
+\newblock \doi{10.1016/j.frl.2017.12.009}.
+
+\bibitem[Juli{\'a}n-Moreno et~al.(2017)Juli{\'a}n-Moreno, {L{\'o}pez de
+  Vergara}, Gonz{\'a}lez, de~Pedro, Royuela-del Val, and
+  Simmross-Wattenberg]{JulianMoreno.2017}
+G.~Juli{\'a}n-Moreno, J.~E. {L{\'o}pez de Vergara}, I.~Gonz{\'a}lez,
+  L.~de~Pedro, J.~Royuela-del Val, and F.~Simmross-Wattenberg.
+\newblock Fast parallel $\alpha$-stable distribution function evaluation and
+  parameter estimation using opencl in gpgpus.
+\newblock \emph{Statistics and Computing}, 27\penalty0 (5):\penalty0
+  1365--1382, 2017.
+\newblock ISSN 0960-3174.
+\newblock \doi{10.1007/s11222-016-9691-9}.
+
+\bibitem[Kaiser(1974)]{Kaiser.1974}
+H.~F. Kaiser.
+\newblock An index of factorial simplicity.
+\newblock \emph{Psychometrika}, 39\penalty0 (1):\penalty0 31--36, 1974.
+\newblock ISSN 0033-3123.
+\newblock \doi{10.1007/BF02291575}.
+
+\bibitem[Kaiser(1981)]{Kaiser.1981}
+H.~F. Kaiser.
+\newblock A revised measure of sampling adequacy for factor-analytic data
+  matrices.
+\newblock \emph{Educational and Psychological Measurement}, 41\penalty0
+  (2):\penalty0 379--381, 1981.
+\newblock ISSN 0013-1644.
+\newblock \doi{10.1177/001316448104100216}.
+
+\bibitem[Klein et~al.(2018)Klein, {Pham Thu}, and Walther]{Klein.2018}
+T.~Klein, H.~{Pham Thu}, and T.~Walther.
+\newblock Bitcoin is not the new gold -- a comparison of volatility,
+  correlation, and portfolio performance.
+\newblock \emph{International Review of Financial Analysis}, 59:\penalty0
+  105--116, 2018.
+\newblock ISSN 10575219.
+\newblock \doi{10.1016/j.irfa.2018.07.010}.
+
+\bibitem[Koutrouvelis(1980)]{Koutrouvelis.1980}
+I.~A. Koutrouvelis.
+\newblock Regression-type estimation of the parameters of stable laws.
+\newblock \emph{Journal of the American Statistical Association}, 75\penalty0
+  (372):\penalty0 918, 1980.
+\newblock ISSN 01621459.
+\newblock \doi{10.2307/2287182}.
+
+\bibitem[Koutrouvelis(1981)]{Koutrouvelis.1981}
+I.~A. Koutrouvelis.
+\newblock An iterative procedure for the estimation of the parameters of stable
+  laws.
+\newblock \emph{Communications in Statistics - Simulation and Computation},
+  10\penalty0 (1):\penalty0 17--28, 1981.
+\newblock ISSN 0361-0918.
+\newblock \doi{10.1080/03610918108812189}.
+
+\bibitem[Mahner and Kary(1997)]{Mahner.1997}
+M.~Mahner and M.~Kary.
+\newblock What exactly are genomes, genotypes and phenotypes? and what about
+  phenomes?
+\newblock \emph{Journal of theoretical biology}, 186\penalty0 (1):\penalty0
+  55--63, 1997.
+\newblock ISSN 0022-5193.
+\newblock \doi{10.1006/jtbi.1996.0335}.
+
+\bibitem[Nagelkerke(1991)]{NAGELKERKE.1991}
+N.~J. Nagelkerke.
+\newblock A note on a general definition of the coefficient of determination.
+\newblock \emph{Biometrika}, 78\penalty0 (3):\penalty0 691--692, 1991.
+\newblock ISSN 0006-3444.
+\newblock \doi{10.1093/biomet/78.3.691}.
+
+\bibitem[Parry and Hacker(1991)]{Parry.1991}
+W.~T. Parry and E.~A. Hacker.
+\newblock \emph{Aristotelian logic}.
+\newblock {State University of New York Press}, Albany, 1991.
+\newblock ISBN 9780791406908.
+
+\bibitem[Rieseberg et~al.(2004)Rieseberg, Church, and Morjan]{Rieseberg.2004}
+L.~H. Rieseberg, S.~A. Church, and C.~L. Morjan.
+\newblock Integration of populations and differentiation of species.
+\newblock \emph{The New phytologist}, 161\penalty0 (1):\penalty0 59--69, 2004.
+\newblock \doi{10.1046/j.1469-8137.2003.00933.x}.
+
+\bibitem[Selmi et~al.(2018)Selmi, Mensi, Hammoudeh, and Bouoiyour]{Selmi.2018}
+R.~Selmi, W.~Mensi, S.~Hammoudeh, and J.~Bouoiyour.
+\newblock Is bitcoin a hedge, a safe haven or a diversifier for oil price
+  movements? a comparison with gold.
+\newblock \emph{Energy Economics}, 74:\penalty0 787--801, 2018.
+\newblock ISSN 01409883.
+\newblock \doi{10.1016/j.eneco.2018.07.007}.
+
+\bibitem[Stosic et~al.(2018)Stosic, Stosic, Ludermir, and Stosic]{Stosic.2018}
+D.~Stosic, D.~Stosic, T.~B. Ludermir, and T.~Stosic.
+\newblock Collective behavior of cryptocurrency price changes.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications},
+  507:\penalty0 499--509, 2018.
+\newblock ISSN 0378-4371.
+\newblock \doi{10.1016/j.physa.2018.05.050}.
+
+\bibitem[Tabachnick and Fidell(op. 2013)]{Tabachnick.op.2013}
+B.~G. Tabachnick and L.~S. Fidell.
+\newblock \emph{Using multivariate statistics}.
+\newblock {Pearson Education}, Boston, 6th ed. edition, op. 2013.
+\newblock ISBN 0205890814.
+
+\bibitem[Takaishi(2018)]{Takaishi.2018}
+T.~Takaishi.
+\newblock Statistical properties and multifractality of bitcoin.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications},
+  506:\penalty0 507--519, 2018.
+\newblock ISSN 0378-4371.
+\newblock \doi{10.1016/j.physa.2018.04.046}.
+
+\bibitem[{Transparency Market Research}(2018)]{TransparencyMarketResearch.2018}
+{Transparency Market Research}.
+\newblock Cryptocurrency market to reach us{\$} 6,702.1 mn by 2025, 2018.
+\newblock URL
+  \url{https://www.transparencymarketresearch.com/cryptocurrency-market.html}.
+
+\bibitem[Urquhart(2016)]{Urquhart.2016}
+A.~Urquhart.
+\newblock The inefficiency of bitcoin.
+\newblock \emph{Economics Letters}, 148:\penalty0 80--82, 2016.
+\newblock ISSN 01651765.
+\newblock \doi{10.1016/j.econlet.2016.09.019}.
+
+\bibitem[Washburn et~al.(2016)Washburn, Bird, Conant, and Pires]{Washburn.2016}
+J.~D. Washburn, K.~A. Bird, G.~C. Conant, and J.~C. Pires.
+\newblock Convergent evolution and the origin of complex phenotypes in the age
+  of systems biology.
+\newblock \emph{International Journal of Plant Sciences}, 177\penalty0
+  (4):\penalty0 305--318, 2016.
+\newblock \doi{10.1086/686009}.
+
+\bibitem[Wei(2018)]{Wei.2018}
+W.~C. Wei.
+\newblock Liquidity and market efficiency in cryptocurrencies.
+\newblock \emph{Economics Letters}, 168:\penalty0 21--24, 2018.
+\newblock ISSN 01651765.
+\newblock \doi{10.1016/j.econlet.2018.04.003}.
+
+\bibitem[Zhang et~al.(2018)Zhang, Wang, Li, and Shen]{Zhang.2018}
+W.~Zhang, P.~Wang, X.~Li, and D.~Shen.
+\newblock Some stylized facts of the cryptocurrency market.
+\newblock \emph{Applied Economics}, 50\penalty0 (55):\penalty0 5950--5965,
+  2018.
+\newblock ISSN 0003-6846.
+\newblock \doi{10.1080/00036846.2018.1488076}.
+
+\end{thebibliography}
